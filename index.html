@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZingerSef - Fast Food Delight</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="ZingerLogo.png" alt="ZingerSef Logo" class="business-logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to <span style="color: darkorange;">ZingerSef</span></h2>
+      <p>Experience the taste of perfection with our mouth-watering fast food.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Recommended Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="ZingerMenu.jpg" alt="Smash Burger Menu">
+          <h3>Zinger Burger</h3>
+          <p>Crispy, spicy, and delicious.</p>
+          <p>Drink of choice!</p>
+          <span class="price">11KM</span>
+        </div>
+        <div class="menu-item">
+          <img src="creamy_zinger.jpeg" alt="Creamy Zinger Menu">
+          <h3>Creamy Zinger</h3>
+          <p>Golden and perfectly salted.</p>
+          <p>Drink of choice!</p>
+          <span class="price">11KM</span>
+        </div>
+        <div class="menu-item">
+          <img src="smashBurger.jpg" alt="Zinger Burger Menu">
+          <h3>Smash Burger</h3>
+          <p>Crispy and creamy all in one </p>
+          <p>Drink of choice!</p>
+          <span class="price">11KM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <img src="ZingerLogo.png" alt="About Us">
+        <p>At ZingerSef, we are passionate about delivering the best fast food experience. Our ingredients are fresh, and our recipes are crafted to perfection. Join us for a meal you won't forget!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <div class="container">
+      <h2>Our Location</h2>
+      <p>Visit us at:</p>
+      <ul>
+        <li>Stupska 6, Sarajevo 71000</li>
+        <li>Saturday – Sunday: 9 AM–1 AM</li>
+        <li>Monday – Friday: 8:30 AM–1 AM</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/zingersef_sa?igsh=MXRtZDJxNGoxd3puMw==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2023 ZingerSef. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Smooth scrolling with offset for header height
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const offsetPosition = targetElement.offsetTop - headerHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        // Close hamburger menu on mobile after clicking a link
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

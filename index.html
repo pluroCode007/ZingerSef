@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ZingerSef - Fast Food Delight</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
       <div class="logo-container">
-        <img src="ZingerLogo.png" alt="ZingerSef Logo" class="business-logo">
+        <img src="ZingerLogo.png" alt="ZingerSef Logo" class="business-logo" />
       </div>
       <nav>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
+          <!-- Dropdown for Categories -->
+          <li class="dropdown">
+            <a href="#menu" class="dropbtn">Categories <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#zinger">Zinger</a></li>
+              <li><a href="#broasted">Broasted & Wings</a></li>
+              <li><a href="#burger">Burger</a></li>
+              <li><a href="#falafel">Falafel</a></li>
+              <li><a href="#plate">Plate</a></li>
+              <li><a href="#sauces">Sauces</a></li>
+            </ul>
+          </li>
           <li><a href="#about">About</a></li>
           <li><a href="#location">Location</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -42,30 +54,410 @@
   <!-- Menu Section -->
   <section id="menu" class="menu">
     <div class="container">
-      <h2>Recommended Menu</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <img src="ZingerMenu.jpg" alt="Smash Burger Menu">
-          <h3>Zinger Burger</h3>
-          <p>Crispy, spicy, and delicious.</p>
-          <p>Drink of choice!</p>
-          <span class="price">11KM</span>
-        </div>
-        <div class="menu-item">
-          <img src="creamy_zinger.jpeg" alt="Creamy Zinger Menu">
-          <h3>Creamy Zinger</h3>
-          <p>Golden and perfectly salted.</p>
-          <p>Drink of choice!</p>
-          <span class="price">11KM</span>
-        </div>
-        <div class="menu-item">
-          <img src="smashBurger.jpg" alt="Zinger Burger Menu">
-          <h3>Smash Burger</h3>
-          <p>Crispy and creamy all in one </p>
-          <p>Drink of choice!</p>
-          <span class="price">11KM</span>
+      <h2>Our Menu</h2>
+      
+      <!-- Zinger Category -->
+      <div id="zinger" class="menu-category">
+        <h3>Zinger Category</h3>
+        <div class="menu-grid">
+          <!-- Creamy Zinger -->
+          <div class="menu-item">
+            <img src="creamy_zinger.jpeg" alt="Creamy Zinger" />
+            <h4>Creamy Zinger</h4>
+            <p>A rich, creamy delight with a spicy kick.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Zinger Sandwich -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0001.jpg" alt="Zinger Sandwich" />
+            <h4>Zinger Sandwich</h4>
+            <p>Crispy, flavorful, and packed with zest.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Zinger Tortilla Kids -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0004.jpg" alt="Zinger Tortilla Kids" />
+            <h4>Zinger Tortilla Kids</h4>
+            <p>A fun, tasty option perfect for little ones.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">4 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">8 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Zinger Crispy -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0003.jpg" alt="Zinger Crispy" />
+            <h4>Zinger Crispy</h4>
+            <p>Extra crunchy and delicious—a must-try delight.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Zinger Pop Corn -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0002.jpg" alt="Zinger Pop Corn" />
+            <h4>Zinger Pop Corn</h4>
+            <p>A unique twist combining crunch with bold flavors.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Zinger Burger -->
+          <div class="menu-item">
+            <img src="smashBurger.jpg" alt="Zinger Burger" />
+            <h4>Zinger Burger</h4>
+            <p>A classic favorite loaded with flavor and zest.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
+      <!-- Broasted and Wings Category -->
+      <div id="broasted" class="menu-category">
+        <h3>Broasted and Wings</h3>
+        <div class="menu-grid">
+          <!-- Fried Wings 7 Pieces -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 12.39.38_490bc5d4.jpg" alt="Fried Wings (7 pcs)" />
+            <h4>Fried Wings (7 pcs)</h4>
+            <p>Crispy, juicy fried wings perfect for sharing.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Crispy Wings 7 Pieces -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 12.39.38_9fee5888.jpg" alt="Crispy Wings (7 pcs)" />
+            <h4>Crispy Wings (7 pcs)</h4>
+            <p>Extra crunchy wings with a burst of flavor.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Broasted Chicken - Half Chicken -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 12.39.38_c88598de.jpg" alt="Broasted Chicken Half" />
+            <h4>Broasted Chicken - Half (4 pcs)</h4>
+            <p>Tender half chicken with sauce and a drink.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">14 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">18 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Broasted Chicken with 8 Pieces -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 12.39.38_c88598de.jpg" alt="Broasted Chicken (8 pcs)" />
+            <h4>Broasted Chicken (8 pcs)</h4>
+            <p>A full feast with 8 crispy pieces, served with sauce and drink.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">22 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">26 KM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Burger Category -->
+      <div id="burger" class="menu-category">
+        <h3>Burger Category</h3>
+        <div class="menu-grid">
+          <!-- Burger Classic -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0031.jpg" alt="Burger Classic" />
+            <h4>Burger Classic</h4>
+            <p>A timeless burger with fresh ingredients.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Tortilla Burger -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0035.jpg" alt="Tortilla Burger" />
+            <h4>Tortilla Burger</h4>
+            <p>A modern twist served in a soft tortilla bun.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Fluffy Burger -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0034.jpg" alt="Fluffy Burger" />
+            <h4>Fluffy Burger</h4>
+            <p>Light, airy, and irresistibly soft.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Smash Burger -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0033.jpg" alt="Smash Burger" />
+            <h4>Smash Burger</h4>
+            <p>Crispy edges and juicy center for a smashing taste.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Double Smash Burger -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0032.jpg" alt="Double Smash Burger" />
+            <h4>Double Smash Burger</h4>
+            <p>Double the patties, double the flavor.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">11 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">15 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Jalapeno Smash Burger -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0036.jpg" alt="Jalapeno Smash Burger" />
+            <h4>Jalapeno Smash Burger</h4>
+            <p>A spicy kick for burger lovers.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">7.5 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Double Jalapeno Smash Burger -->
+          <div class="menu-item">
+            <img src="IMG-20250219-WA0036.jpg" alt="Double Jalapeno Smash Burger" />
+            <h4>Double Jalapeno Smash Burger</h4>
+            <p>Double the spice, double the fun.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">11 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">15 KM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Falafel Category -->
+      <div id="falafel" class="menu-category">
+        <h3>Falafel Category</h3>
+        <div class="menu-grid">
+          <!-- Crispy Vegan Sandwich Falafel -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 15.55.46_3934793e.jpg" alt="Crispy Vegan Sandwich Falafel" />
+            <h4>Crispy Vegan Sandwich Falafel</h4>
+            <p>A delicious vegan sandwich with falafel, fresh veggies, and hummus.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">6.50 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Crispy Vegan Tortilla Falafel -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 15.55.46_bc6a0075.jpg" alt="Crispy Vegan Tortilla Falafel" />
+            <h4>Crispy Vegan Tortilla Falafel</h4>
+            <p>A modern twist—falafel wrapped in a soft tortilla with fresh toppings.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">6.50 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">11 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Crispy Vegan Falafel -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 15.55.46_39483bf4.jpg" alt="Crispy Vegan Falafel" />
+            <h4>Crispy Vegan Falafel</h4>
+            <p>Traditional crispy falafel balls served with your favorite dip.</p>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">3 KM</span>
+              </div>
+              <div class="price-box">
+                <span class="price-label">Menu</span>
+                <span class="price-menu">8 KM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Plate Category -->
+      <div id="plate" class="menu-category">
+        <h3>Plate</h3>
+        <div class="menu-grid">
+          <!-- Zinger Crispy Plate -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 16.21.10_a4a70c1e.jpg" alt="Zinger Crispy Plate" />
+            <h4>Zinger Crispy Plate</h4>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">17 KM</span>
+              </div>
+            </div>
+          </div>
+          <!-- Zinger Grilled Chicken Plate -->
+          <div class="menu-item">
+            <img src="WhatsApp Image 2025-02-19 at 16.21.10_e5dd157f.jpg" alt="Zinger Grilled Chicken Plate" />
+            <h4>Zinger Grilled Chicken Plate</h4>
+            <div class="price-container">
+              <div class="price-box">
+                <span class="price-label">Dish</span>
+                <span class="price-dish">17 KM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sauces Category -->
+      <div id="sauces" class="menu-category">
+        <h3>Sauces</h3>
+        <div class="menu-grid">
+          <!-- Sauces Item -->
+          <div class="menu-item sauces-item">
+            <img src="WhatsApp Image 2025-02-19 at 16.22.05_bdfe201d.jpg" alt="Sauces" />
+            <h4>Sauces</h4>
+            <div class="sauce-container">
+              <div class="sauce-box"><span class="sauce-label">Spicy Cocktail</span></div>
+              <div class="sauce-box"><span class="sauce-label">BBQ Sauce</span></div>
+              <div class="sauce-box"><span class="sauce-label">Mayonnaise</span></div>
+              <div class="sauce-box"><span class="sauce-label">Ketchup</span></div>
+              <div class="sauce-box"><span class="sauce-label">Curry Sauce</span></div>
+              <div class="sauce-box"><span class="sauce-label">Mild Cocktail</span></div>
+              <div class="sauce-box"><span class="sauce-label">White Garlic Sauce</span></div>
+              <div class="sauce-box"><span class="sauce-label">Mexican Sauce</span></div>
+              <div class="sauce-box"><span class="sauce-label">Ranch Sauce</span></div>
+              <div class="sauce-box"><span class="sauce-label">Jalapeno Sauce</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Sauces Category -->
+      
     </div>
   </section>
 
@@ -74,7 +466,7 @@
     <div class="container">
       <h2>About Us</h2>
       <div class="about-content">
-        <img src="ZingerLogo.png" alt="About Us">
+        <img src="ZingerLogo.png" alt="About ZingerSef" />
         <p>At ZingerSef, we are passionate about delivering the best fast food experience. Our ingredients are fresh, and our recipes are crafted to perfection. Join us for a meal you won't forget!</p>
       </div>
     </div>
@@ -98,52 +490,55 @@
     <div class="container">
       <h2>Contact Us</h2>
       <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
- <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="social-links">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/zingersef_sa?igsh=MXRtZDJxNGoxd3puMw==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.facebook.com/zingersefbh/?locale=de_DE"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zingersef_sa?igsh=MXRtZDJxNGoxd3puMw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2023 ZingerSef. All rights reserved.</p>
     </div>
-    <p>&copy; 2023 ZingerSef. All rights reserved.</p>
-  </div>
-</footer>
+  </footer>
 
-  <!-- JavaScript for Hamburger Menu -->
+  <!-- JavaScript for Hamburger Menu and Smooth Scrolling -->
   <script>
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
+      // Toggle icon between bars and close icon
+      if (navLinks.classList.contains('active')) {
+        hamburger.innerHTML = '<i class="fas fa-times"></i>';
+      } else {
+        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+      }
     });
 
-    // Smooth scrolling with offset for header height
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
         const headerHeight = document.querySelector('header').offsetHeight;
         const offsetPosition = targetElement.offsetTop - headerHeight;
-
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
         });
-
-        // Close hamburger menu on mobile after clicking a link
         if (navLinks.classList.contains('active')) {
           navLinks.classList.remove('active');
+          hamburger.innerHTML = '<i class="fas fa-bars"></i>';
         }
       });
     });
